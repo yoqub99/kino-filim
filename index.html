@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1 class="title">Movies</h1>
+    <div class="container">
+        <form id="form">
+            <input id="input" type="text" placeholder="search">
+        
+            <select name="select" id="select">
+                <option id="all" value="All">All</option>
+            </select>
+        
+            <button class="form__btn" id="formBtn" type="submit">SEARCH</button>
+        </form>
+        <ul id="film"></ul>
+    </div>
+
+    <div class="modal">
+        <div class="modal__content bounceInDown">
+            <button class="btn">
+                <i class="fas fa-times-circle icon"></i>
+            </button>
+            <img class="modal__img" src="" alt="film-img">
+            <div class="modal__write">
+                <h3 class="modal__title"></h3>
+                <p class="info">#Info</p>
+                <p class="modal__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate est ea iste voluptatum aspernatur magni dolorum porro suscipit facilis optio vitae, ratione natus neque accusamus.</p>
+                <p class="modal__ganre"></p>
+                <button class="modal__download">Download</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./my-js/films.js"></script>
+    <script src="./my-js/islom.js"></script>
+    <script src="./index.js"></script>
+    
+</body>
+</html>
